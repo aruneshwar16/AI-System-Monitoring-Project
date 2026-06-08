@@ -3,6 +3,8 @@
 AI-powered infrastructure capacity planning system that replaces manual Excel-based forecasting with natural language queries, statistical forecasting, risk analysis, and actionable recommendations.
 # Drive : 
 https://drive.google.com/drive/folders/1q2NPVc1GJ3Rx_Z4nsL0txIY9OnJDxn-0?usp=drive_link
+# Demo Video
+https://www.loom.com/share/7907ceadc58b4c88932998222117ab7c
 
 ## Features
 
