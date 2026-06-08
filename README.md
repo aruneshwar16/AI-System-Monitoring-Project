@@ -184,7 +184,3 @@ within next 45 days.
 
 Confidence: High (78%)
 ```
-
-## License
-
-MIT
