@@ -15,8 +15,7 @@ https://www.loom.com/share/7907ceadc58b4c88932998222117ab7c
 - **Interactive Charts** — Plotly visualizations with historical data, forecasts, and threshold lines
 - **Confidence Scoring** — Composite score based on model fit, data quality, and horizon
 - **Business Recommendations** — Prioritized capacity expansion guidance
-- **Query History** — SQLite persistence of all queries and results
-
+  
 ## Architecture
 
 ```mermaid
@@ -30,7 +29,7 @@ flowchart TD
     G --> H[Validation<br/>Gemini]
     H --> I[Answer Generator<br/>Gemini]
     I --> J[Final Answer + Chart]
-    J --> K[(SQLite History DB)]
+    
 
     L[CSV Data] --> E
     M[Streamlit UI] --> A
@@ -54,7 +53,7 @@ Understand Query → Select Metric → Forecast → Validate → Generate Answer
 | `forecasting/arima_forecast.py` | statsmodels ARIMA(1,1,1) |
 | `forecasting/confidence.py` | Composite confidence scoring |
 | `charts/plotter.py` | Plotly interactive charts |
-| `database/db.py` | SQLite query history |
+
 
 ## Project Structure
 
@@ -65,7 +64,6 @@ capacity_forecaster/
 ├── agent/                          # AI agent modules
 ├── forecasting/                    # Forecast engines
 ├── charts/                         # Plotly visualizations
-├── database/                       # SQLite persistence
 ├── utils/                          # Shared utilities
 ├── tests/                          # Pytest unit tests
 ├── prompts/                        # Gemini prompt templates
